@@ -28,7 +28,14 @@ func show_menu() -> void:
 	await set_menu_visibility(true)
 
 
+func _ready() -> void:
+	get_tree().paused = true
+
+
 func _process(_delta: float) -> void:
+	# HACK: for some reason the menu moves offscreen when the player camera moves...
+	$MenuViewportContainer.position = $Game/PlayerCamera.position - Vector2(1280.0 / 2, 720.0 / 2)
+	
 	if Input.is_action_just_pressed("int_pause"):
 		show_menu()
 
