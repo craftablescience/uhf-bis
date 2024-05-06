@@ -1,0 +1,380 @@
+[gd_scene load_steps=3 format=3 uid="uid://3p8e6fnaq3ak"]
+
+[ext_resource type="Texture2D" uid="uid://lw70l4dfduf0" path="res://textures/ponies.png" id="1_celac"]
+[ext_resource type="Script" path="res://scripts/ponies/PonyBase.gd" id="1_oo0qs"]
+
+[node name="PonyBase" type="Node2D"]
+script = ExtResource("1_oo0qs")
+
+[node name="Tails" type="Node2D" parent="."]
+
+[node name="RD" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(252, -20)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(106.237, 746.636, 206.127, 208.182)
+
+[node name="PP" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(220, -38)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(406.29, 736.23, 143.99, 208.12)
+
+[node name="TS" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(225, -26)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(677.19, 730.14, 165.77, 210.54)
+
+[node name="FS" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(254, -50)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(110.91, 1058.05, 239.58, 212.96)
+
+[node name="AJ" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(190, 11)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(420.67, 1081.04, 151.25, 191.18)
+
+[node name="RR" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(222, 1)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(668.72, 1070.15, 200.86, 199.65)
+
+[node name="PO" type="Sprite2D" parent="Tails"]
+visible = false
+position = Vector2(247, 15)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(959.12, 738.61, 266.2, 225.06)
+
+[node name="Bodys" type="Node2D" parent="."]
+
+[node name="Normal" type="Sprite2D" parent="Bodys"]
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(842.844, 32.266, 352.615, 436.705)
+
+[node name="Walking" type="Sprite2D" parent="Bodys"]
+visible = false
+position = Vector2(2, -12)
+scale = Vector2(1, 1.03885)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(448.732, 47.7565, 360.755, 399.408)
+
+[node name="Cutiemarks" type="Node2D" parent="."]
+
+[node name="RD" type="Sprite2D" parent="Cutiemarks"]
+visible = false
+position = Vector2(125, -38)
+scale = Vector2(0.202703, 0.202703)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(599.029, 518.447, 111.195, 163.116)
+
+[node name="PP" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/PP"]
+position = Vector2(122.982, -34.8301)
+rotation = -0.715011
+scale = Vector2(0.202703, 0.202703)
+texture = ExtResource("1_celac")
+offset = Vector2(-51.5223, -2.84035)
+region_enabled = true
+region_rect = Rect2(788.529, 518.777, 90.0826, 163.636)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/PP"]
+position = Vector2(122.982, -34.8301)
+rotation = -0.428199
+scale = Vector2(0.202703, 0.202703)
+texture = ExtResource("1_celac")
+offset = Vector2(13.9122, -22.6822)
+region_enabled = true
+region_rect = Rect2(788.529, 518.777, 90.0826, 163.636)
+
+[node name="3" type="Sprite2D" parent="Cutiemarks/PP"]
+position = Vector2(122.982, -34.8301)
+rotation = -0.349954
+scale = Vector2(0.202703, 0.202703)
+texture = ExtResource("1_celac")
+offset = Vector2(45.8479, 28.0866)
+region_enabled = true
+region_rect = Rect2(788.529, 518.777, 90.0826, 163.636)
+
+[node name="TS" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(124, -37)
+rotation = -0.086034
+scale = Vector2(0.313, 0.313)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(115, -49)
+rotation = -0.086034
+scale = Vector2(0.098, 0.098)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="3" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(134, -49)
+rotation = -0.086034
+scale = Vector2(0.098, 0.098)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="4" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(109, -28)
+rotation = -0.086034
+scale = Vector2(0.098, 0.098)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="5" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(123, -19)
+rotation = -0.086034
+scale = Vector2(0.098, 0.098)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="6" type="Sprite2D" parent="Cutiemarks/TS"]
+position = Vector2(137, -26)
+rotation = -0.086034
+scale = Vector2(0.098, 0.098)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(888.29, 603.596, 75.7524, 81.9616)
+
+[node name="FS" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/FS"]
+position = Vector2(110, -36)
+rotation = -0.414484
+scale = Vector2(0.298, 0.298)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(985.258, 552.436, 67.8557, 61.4942)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/FS"]
+position = Vector2(129, -27)
+rotation = 0.790634
+scale = Vector2(0.298, 0.298)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(985.258, 552.436, 67.8557, 61.4942)
+
+[node name="3" type="Sprite2D" parent="Cutiemarks/FS"]
+position = Vector2(127, -45)
+rotation = 0.0314159
+scale = Vector2(0.298, 0.298)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(985.258, 552.436, 67.8557, 61.4942)
+
+[node name="AJ" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/AJ"]
+position = Vector2(110, -36)
+rotation = -0.728977
+scale = Vector2(0.183, 0.183)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1133.27, 543.981, 83.5049, 87.7034)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/AJ"]
+position = Vector2(127, -44)
+rotation = -0.158153
+scale = Vector2(0.183, 0.183)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1133.27, 543.981, 83.5049, 87.7034)
+
+[node name="3" type="Sprite2D" parent="Cutiemarks/AJ"]
+position = Vector2(128, -27)
+rotation = 0.200711
+scale = Vector2(0.183, 0.183)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1133.27, 543.981, 83.5049, 87.7034)
+
+[node name="RR" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/RR"]
+position = Vector2(121.244, -24.4635)
+rotation = -0.414484
+scale = Vector2(0.388, 0.388)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1075.14, 612.476, 40.1476, 53.8486)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/RR"]
+position = Vector2(131.244, -37.4636)
+rotation = -0.414484
+scale = Vector2(0.388, 0.388)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1075.14, 612.476, 40.1476, 53.8486)
+
+[node name="3" type="Sprite2D" parent="Cutiemarks/RR"]
+position = Vector2(118.244, -49.4635)
+rotation = -0.414484
+scale = Vector2(0.388, 0.388)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(1075.14, 612.476, 40.1476, 53.8486)
+
+[node name="PO" type="Node2D" parent="Cutiemarks"]
+visible = false
+
+[node name="1" type="Sprite2D" parent="Cutiemarks/PO"]
+position = Vector2(126, -38)
+rotation = 0.569397
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(452.4, 553.1, 73.7, 111.1)
+
+[node name="2" type="Sprite2D" parent="Cutiemarks/PO"]
+position = Vector2(116, -35)
+rotation = -0.450822
+scale = Vector2(0.25, 0.25)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(452.4, 553.1, 73.7, 111.1)
+
+[node name="Eyes" type="Node2D" parent="."]
+
+[node name="Normal" type="Sprite2D" parent="Eyes"]
+position = Vector2(-88, -138)
+scale = Vector2(0.676471, 0.676471)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(70.5647, 483.282, 121.701, 119.217)
+
+[node name="Happy" type="Sprite2D" parent="Eyes"]
+visible = false
+position = Vector2(-94, -134)
+scale = Vector2(1.27824, 1.27824)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(265.001, 525.001, 54.0001, 50.0001)
+
+[node name="Wing" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(51, -4)
+texture = ExtResource("1_celac")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(49, 324, 139, 93)
+
+[node name="Mouths" type="Node2D" parent="."]
+
+[node name="Normal" type="Sprite2D" parent="Mouths"]
+position = Vector2(-131, -69)
+rotation = -0.255223
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(80.4349, 108.593, 48.7502, 32.3291)
+
+[node name="Happy" type="Sprite2D" parent="Mouths"]
+visible = false
+position = Vector2(-139, -72)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(74.1193, 49.2148, 43.5665, 30.0725)
+
+[node name="Sad" type="Sprite2D" parent="Mouths"]
+visible = false
+position = Vector2(-133, -69)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(86.6566, 160.042, 44.9545, 25.87)
+
+[node name="Hairs" type="Node2D" parent="."]
+
+[node name="RD" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-95, -146)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(73.3816, 1430.93, 226.919, 185.147)
+
+[node name="PP" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-79, -143)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(399.836, 1745.53, 252.944, 278.667)
+
+[node name="TS" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-77, -143)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(704.012, 1379.82, 229.864, 259.146)
+
+[node name="FS" type="Node2D" parent="Hairs"]
+visible = false
+
+[node name="Top" type="Sprite2D" parent="Hairs/FS"]
+z_index = -1
+position = Vector2(-153, -196)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(74.0266, 1718.01, 132.786, 125.429)
+
+[node name="Mane" type="Sprite2D" parent="Hairs/FS"]
+position = Vector2(-35, -112)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(206.813, 1718.01, 103.459, 293.358)
+
+[node name="AJ" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-92, -147)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(371.389, 1386.41, 252.944, 259.375)
+
+[node name="RR" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-79, -120)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(740.091, 1760.25, 184.29, 238.496)
+
+[node name="PO" type="Sprite2D" parent="Hairs"]
+visible = false
+position = Vector2(-74, -144)
+scale = Vector2(0.743243, 0.743243)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(985.088, 1344.06, 376.86, 333.376)
+
+[node name="Ear" type="Sprite2D" parent="."]
+position = Vector2(-37, -182)
+scale = Vector2(1.12025, 1.12025)
+texture = ExtResource("1_celac")
+region_enabled = true
+region_rect = Rect2(276.5, 308.992, 79.9126, 114.746)
