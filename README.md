@@ -1,4 +1,4 @@
-# UHF: Blooming Into Spring
+# UHF: Blooming into Spring
 
 A game for the GDDC May 2024 game jam.
 
