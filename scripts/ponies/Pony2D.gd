@@ -20,6 +20,16 @@ var pony: Node2D = null
 			pony.set_emotion(pony_emotion)
 
 
+func hide_accessory(node_name: String) -> void:
+	if pony:
+		pony.hide_accessory(node_name)
+
+
+func show_accessory(node_name: String) -> void:
+	if pony:
+		pony.show_accessory(node_name)
+
+
 func _ready() -> void:
 	if Engine.is_editor_hint():
 		for child in get_children():

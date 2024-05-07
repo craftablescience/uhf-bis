@@ -61,3 +61,17 @@ func set_emotion(emotion: Globals.PonyEmotion) -> void:
 		Globals.PonyEmotion.Sad:
 			$Eyes/Normal.show() # Intentional
 			$Mouths/Sad.show()
+
+
+func change_accessory_visibility(node_name: String, visibility: bool) -> void:
+	var accessory: Node2D = $Accessories.get_node_or_null(node_name)
+	if accessory != null:
+		accessory.visible = visibility
+
+
+func hide_accessory(node_name: String) -> void:
+	change_accessory_visibility(node_name, false)
+
+
+func show_accessory(node_name: String) -> void:
+	change_accessory_visibility(node_name, true)

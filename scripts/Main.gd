@@ -18,6 +18,7 @@ func set_menu_visibility(visibility: bool) -> void:
 	menu_is_visible = visibility
 	menu_visibility_is_changing = false
 	get_tree().paused = menu_is_visible
+	$MenuViewportContainer.mouse_filter = MOUSE_FILTER_PASS if menu_is_visible else MOUSE_FILTER_IGNORE
 
 
 func hide_menu() -> void:

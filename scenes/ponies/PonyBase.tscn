@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://3p8e6fnaq3ak"]
+[gd_scene load_steps=4 format=3 uid="uid://3p8e6fnaq3ak"]
 
 [ext_resource type="Texture2D" uid="uid://lw70l4dfduf0" path="res://textures/ponies.png" id="1_celac"]
 [ext_resource type="Script" path="res://scripts/ponies/PonyBase.gd" id="1_oo0qs"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="3_0bx5h"]
 
 [node name="PonyBase" type="Node2D"]
 script = ExtResource("1_oo0qs")
@@ -57,14 +58,14 @@ texture = ExtResource("1_celac")
 region_enabled = true
 region_rect = Rect2(959.12, 738.61, 266.2, 225.06)
 
-[node name="Bodys" type="Node2D" parent="."]
+[node name="Bodies" type="Node2D" parent="."]
 
-[node name="Normal" type="Sprite2D" parent="Bodys"]
+[node name="Normal" type="Sprite2D" parent="Bodies"]
 texture = ExtResource("1_celac")
 region_enabled = true
 region_rect = Rect2(842.844, 32.266, 352.615, 436.705)
 
-[node name="Walking" type="Sprite2D" parent="Bodys"]
+[node name="Walking" type="Sprite2D" parent="Bodies"]
 visible = false
 position = Vector2(2, -12)
 scale = Vector2(1, 1.03885)
@@ -378,3 +379,18 @@ scale = Vector2(1.12025, 1.12025)
 texture = ExtResource("1_celac")
 region_enabled = true
 region_rect = Rect2(276.5, 308.992, 79.9126, 114.746)
+
+[node name="Accessories" type="Node2D" parent="."]
+position = Vector2(-37, -182)
+scale = Vector2(1.12025, 1.12025)
+
+[node name="WateringCan" type="Sprite2D" parent="Accessories"]
+visible = false
+position = Vector2(-121.401, 144.611)
+scale = Vector2(-1, 1)
+texture = ExtResource("3_0bx5h")
+region_enabled = true
+region_rect = Rect2(367.225, 262.542, 150.715, 124.749)
+
+[node name="DropletSpawnPoint" type="Node2D" parent="Accessories/WateringCan"]
+position = Vector2(72, 16)
