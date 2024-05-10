@@ -1,0 +1,35 @@
+[gd_scene load_steps=3 format=3 uid="uid://dspucw2ukeyku"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/GrassBase.gd" id="1_nr4wf"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_bjxpg"]
+
+[node name="GrassBase" type="Node2D"]
+script = ExtResource("1_nr4wf")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-3, -19)
+texture = ExtResource("2_bjxpg")
+region_enabled = true
+region_rect = Rect2(190.795, 921.88, 47.0363, 49.7351)
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1, -17)
+texture = ExtResource("2_bjxpg")
+region_enabled = true
+region_rect = Rect2(258.573, 926.522, 40.9539, 38.9755)
+
+[node name="3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1, -16)
+texture = ExtResource("2_bjxpg")
+region_enabled = true
+region_rect = Rect2(323.566, 928.811, 37.6068, 35.5259)
+
+[node name="4" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(1, -14)
+texture = ExtResource("2_bjxpg")
+region_enabled = true
+region_rect = Rect2(379.145, 928.623, 62.1233, 33.6336)

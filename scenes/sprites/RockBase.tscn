@@ -1,0 +1,37 @@
+[gd_scene load_steps=3 format=3 uid="uid://cxldjhkf5c5th"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/RockBase.gd" id="1_vhyf7"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_di6sl"]
+
+[node name="RockBase" type="Node2D"]
+script = ExtResource("1_vhyf7")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_di6sl")
+region_enabled = true
+region_rect = Rect2(55.2301, 827.228, 72.3996, 75.1316)
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_di6sl")
+region_enabled = true
+region_rect = Rect2(138.779, 838.15, 104.501, 53.9581)
+
+[node name="3" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_di6sl")
+region_enabled = true
+region_rect = Rect2(250.793, 836.101, 110.648, 59.4222)
+
+[node name="4" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_di6sl")
+region_enabled = true
+region_rect = Rect2(365.54, 833.369, 86.0598, 62.1543)
+
+[node name="5" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_di6sl")
+region_enabled = true
+region_rect = Rect2(465.943, 837.467, 96.9881, 54.6412)

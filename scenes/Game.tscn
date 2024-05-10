@@ -1,8 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://bchsv8o664ai0"]
+[gd_scene load_steps=3 format=3 uid="uid://bchsv8o664ai0"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_64xwx"]
 [ext_resource type="Script" path="res://scripts/ponies/Pony2D.gd" id="1_rvff5"]
-[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_mup46"]
 
 [node name="Game" type="Control"]
 process_mode = 1
@@ -17,12 +16,6 @@ script = ExtResource("1_64xwx")
 [node name="Background" type="ParallaxBackground" parent="."]
 
 [node name="Closest" type="ParallaxLayer" parent="Background"]
-
-[node name="Sprite2D" type="Sprite2D" parent="Background/Closest"]
-position = Vector2(296, 499)
-texture = ExtResource("2_mup46")
-region_enabled = true
-region_rect = Rect2(427.029, 8.28288, 165.044, 204.974)
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2(640, 360)

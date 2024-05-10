@@ -13,11 +13,17 @@ var pony: Node2D = null
 		if pony:
 			pony.set_pony(pony_type)
 
-@export var pony_emotion: Globals.PonyEmotion = Globals.PonyEmotion.Normal:
+@export var pony_emotion: Globals.PonyEmotion = Globals.PonyEmotion.NORMAL:
 	set(new_pony_emotion):
 		pony_emotion = new_pony_emotion
 		if pony:
 			pony.set_emotion(pony_emotion)
+
+@export var pony_body: Globals.PonyBody = Globals.PonyBody.NORMAL:
+	set(new_pony_body):
+		pony_body = new_pony_body
+		if pony:
+			pony.set_body(pony_body)
 
 
 func hide_accessory(node_name: String) -> void:
@@ -32,11 +38,10 @@ func show_accessory(node_name: String) -> void:
 
 func _ready() -> void:
 	if Engine.is_editor_hint():
-		for child in get_children():
-			remove_child(child)
-			child.queue_free()
+		Globals.remove_children(self)
 	
 	pony = PONY_BASE.instantiate()
 	add_child(pony)
 	pony.set_pony(pony_type)
 	pony.set_emotion(pony_emotion)
+	pony.set_body(pony_body)

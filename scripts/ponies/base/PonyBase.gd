@@ -52,13 +52,13 @@ func clear_emotion() -> void:
 func set_emotion(emotion: Globals.PonyEmotion) -> void:
 	clear_emotion()
 	match emotion:
-		Globals.PonyEmotion.Normal:
+		Globals.PonyEmotion.NORMAL:
 			$Eyes/Normal.show()
 			$Mouths/Normal.show()
-		Globals.PonyEmotion.Happy:
+		Globals.PonyEmotion.HAPPY:
 			$Eyes/Happy.show()
 			$Mouths/Happy.show()
-		Globals.PonyEmotion.Sad:
+		Globals.PonyEmotion.SAD:
 			$Eyes/Normal.show() # Intentional
 			$Mouths/Sad.show()
 
@@ -75,3 +75,18 @@ func hide_accessory(node_name: String) -> void:
 
 func show_accessory(node_name: String) -> void:
 	change_accessory_visibility(node_name, true)
+
+
+func clear_body() -> void:
+	Globals.hide_children($Bodies)
+	$Bodies/Normal.show()
+
+
+func set_body(body: Globals.PonyBody) -> void:
+	clear_body()
+	match body:
+		Globals.PonyBody.NORMAL:
+			$Bodies/Normal.show()
+		Globals.PonyBody.WALKING:
+			$Bodies/Normal.hide()
+			$Bodies/Walking.show()

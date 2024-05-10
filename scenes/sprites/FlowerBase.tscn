@@ -1,0 +1,99 @@
+[gd_scene load_steps=3 format=3 uid="uid://bbarmvcfpfcwd"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/FlowerBase.gd" id="1_idlgg"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_2o0a0"]
+
+[node name="FlowerBase" type="Node2D"]
+script = ExtResource("1_idlgg")
+
+[node name="UngrownGeneric" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="UngrownGeneric"]
+visible = false
+position = Vector2(-56, -53)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(20.3948, 479.126, 159.279, 115.703)
+
+[node name="2" type="Sprite2D" parent="UngrownGeneric"]
+visible = false
+position = Vector2(-16, -53)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(216.024, 471.93, 93.9145, 125.47)
+
+[node name="3" type="Sprite2D" parent="UngrownGeneric"]
+visible = false
+position = Vector2(44, -51)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(336.989, 480.929, 119.459, 110.443)
+
+[node name="UngrownTulip" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="UngrownTulip"]
+visible = false
+position = Vector2(-40, -37)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(17.7899, 224.553, 103.145, 80.0528)
+
+[node name="2" type="Sprite2D" parent="UngrownTulip"]
+visible = false
+position = Vector2(-12, -43)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(131.022, 212.953, 54.6412, 88.171)
+
+[node name="3" type="Sprite2D" parent="UngrownTulip"]
+visible = false
+position = Vector2(22, -40)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(200.804, 215.979, 80.7199, 89.4128)
+
+[node name="GrownGeneric" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="GrownGeneric"]
+visible = false
+position = Vector2(-10, -72)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(101.08, 633.915, 91.3739, 155.76)
+
+[node name="2" type="Sprite2D" parent="GrownGeneric"]
+visible = false
+position = Vector2(-4, -69)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(233.965, 637.422, 73.6389, 146.507)
+
+[node name="3" type="Sprite2D" parent="GrownGeneric"]
+visible = false
+position = Vector2(10, -68)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(325.201, 638.646, 76.0409, 139.953)
+
+[node name="GrownTulip" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="GrownTulip"]
+visible = false
+position = Vector2(-17, -53)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(58.5286, 329.937, 59.2336, 109.354)
+
+[node name="2" type="Sprite2D" parent="GrownTulip"]
+visible = false
+position = Vector2(-4, -50)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(142.539, 333.731, 41.3584, 105.499)
+
+[node name="3" type="Sprite2D" parent="GrownTulip"]
+visible = false
+position = Vector2(9, -52)
+texture = ExtResource("2_2o0a0")
+region_enabled = true
+region_rect = Rect2(200.32, 329.528, 51.1723, 107.602)

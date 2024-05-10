@@ -24,6 +24,7 @@ func walk_pony(pony: Pony2D) -> void:
 	var tween := get_tree().create_tween().bind_node(self)
 	tween.tween_interval(TWEEN_TIME)
 	tween.tween_callback(func() -> void:
+		pony.pony_body = Globals.PonyBody.NORMAL
 		pony.position += Vector2(20 * dir, 15)
 		pony.rotation_degrees += dir)
 	tween.tween_interval(TWEEN_TIME)
@@ -36,6 +37,7 @@ func walk_pony(pony: Pony2D) -> void:
 		pony.rotation_degrees += dir)
 	tween.tween_interval(TWEEN_TIME)
 	tween.tween_callback(func() -> void:
+		pony.pony_body = Globals.PonyBody.WALKING
 		pony.position += Vector2(-2 * dir, -2)
 		pony.rotation_degrees += -dir)
 	tween.tween_interval(TWEEN_TIME)
@@ -60,6 +62,7 @@ func walk_pony(pony: Pony2D) -> void:
 		pony.rotation_degrees += -dir)
 	tween.tween_interval(TWEEN_TIME)
 	tween.tween_callback(func() -> void:
+		pony.pony_body = Globals.PonyBody.NORMAL
 		pony.position += Vector2(2 * dir, -2)
 		pony.rotation_degrees += dir)
 	tween.tween_interval(TWEEN_TIME)
@@ -71,6 +74,7 @@ func walk_pony(pony: Pony2D) -> void:
 		pony.position += Vector2(-20 * dir, -15)
 		pony.rotation_degrees += dir)
 	tween.tween_callback(func() -> void:
+		pony.pony_body = Globals.PonyBody.NORMAL
 		pony.position = orig_pos
 		pony.rotation_degrees = orig_rot)
 	tween.play()

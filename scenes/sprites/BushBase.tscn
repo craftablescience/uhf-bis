@@ -1,0 +1,221 @@
+[gd_scene load_steps=3 format=3 uid="uid://b2g8umvduke06"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/BushBase.gd" id="1_31yti"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_gxxao"]
+
+[node name="BushBase" type="Node2D"]
+script = ExtResource("1_31yti")
+
+[node name="Blank" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="Blank"]
+visible = false
+position = Vector2(-1, -37)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(10.2831, 102.106, 150.884, 95.0009)
+
+[node name="2" type="Sprite2D" parent="Blank"]
+visible = false
+position = Vector2(-7, -50)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(202.689, 73.1617, 180.688, 123.945)
+
+[node name="3" type="Sprite2D" parent="Blank"]
+visible = false
+position = Vector2(-3, -81)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(432.42, 12.9376, 152.126, 184.169)
+
+[node name="Flowering" type="Node2D" parent="."]
+
+[node name="1" type="Sprite2D" parent="Flowering"]
+visible = false
+position = Vector2(-1, -37)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(10.2831, 102.106, 150.884, 95.0009)
+
+[node name="Flower1" type="Sprite2D" parent="Flowering/1"]
+position = Vector2(-37, 12)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower2" type="Sprite2D" parent="Flowering/1"]
+position = Vector2(-14, -11)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower3" type="Sprite2D" parent="Flowering/1"]
+position = Vector2(7, 14)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower4" type="Sprite2D" parent="Flowering/1"]
+position = Vector2(29, -11)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower5" type="Sprite2D" parent="Flowering/1"]
+position = Vector2(48, 18)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="2" type="Sprite2D" parent="Flowering"]
+visible = false
+position = Vector2(-7, -50)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(202.689, 73.1617, 180.688, 123.945)
+
+[node name="Flower1" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(-50, 22)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower2" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(-28, -6)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower3" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(2, -31)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower4" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(31, -21)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower5" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(51, 2)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower6" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(65, 31)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower7" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(29, 30)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower8" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(6, 5)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower9" type="Sprite2D" parent="Flowering/2"]
+position = Vector2(-17, 27)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="3" type="Sprite2D" parent="Flowering"]
+visible = false
+position = Vector2(-3, -81)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(432.42, 12.9376, 152.126, 184.169)
+
+[node name="Flower1" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(-37, 50)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower2" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(-29, 18)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower3" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(-23, -16)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower4" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(-2, -48)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower5" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(34, -46)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower6" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(17, -15)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower7" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(43, 12)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower8" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(9, 19)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower9" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(38, 51)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)
+
+[node name="Flower10" type="Sprite2D" parent="Flowering/3"]
+position = Vector2(0, 53)
+scale = Vector2(0.435484, 0.435484)
+texture = ExtResource("2_gxxao")
+region_enabled = true
+region_rect = Rect2(615.212, 110.751, 62.1332, 62.4518)

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://cnq1h2br0bm2l"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/FlowerBedBase.gd" id="1_qtqk1"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_fy6o8"]
+
+[node name="FlowerBedBase" type="Node2D"]
+script = ExtResource("1_qtqk1")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_fy6o8")
+region_enabled = true
+region_rect = Rect2(56.7353, 1010.64, 112.579, 64.3858)
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_fy6o8")
+region_enabled = true
+region_rect = Rect2(245.944, 995.479, 316.106, 131.522)

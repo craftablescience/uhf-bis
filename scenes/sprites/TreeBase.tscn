@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://ofvk8ehv8w6e"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/TreeBase.gd" id="1_mh2h6"]
+[ext_resource type="Texture2D" uid="uid://i6kfaqba62ah" path="res://textures/nature.png" id="2_fxgr0"]
+
+[node name="TreeBase" type="Node2D"]
+script = ExtResource("1_mh2h6")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(143, -189)
+texture = ExtResource("2_fxgr0")
+region_enabled = true
+region_rect = Rect2(35.5129, 1149.56, 579.785, 443.623)
