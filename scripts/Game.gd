@@ -1,7 +1,7 @@
 extends Control
 
 
-const PLAYER_MOVE_SPEED := 64
+const PLAYER_MOVE_SPEED := 150
 
 const TWEEN_TIME := 0.33333 / 6
 
@@ -137,7 +137,8 @@ func _process(delta: float) -> void:
 		await flip_pony(%Player, FlipDirection.Right, true)
 		player_direction = FlipDirection.Right
 		player_is_flipping = false
-	else:
+	elif (left and %Player.global_position.x - PLAYER_MOVE_SPEED > $Bounds/Left.global_position.x) or \
+		 (right and %Player.global_position.x + PLAYER_MOVE_SPEED < $Bounds/Right.global_position.x):
 		player_is_walking = true
 		await walk_pony(%Player)
 		player_is_walking = false

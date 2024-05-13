@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://celx4joxxmnlv"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/CloudBase.gd" id="1_uuaqe"]
+[ext_resource type="Texture2D" uid="uid://dmtpeovudv6fj" path="res://textures/clouds.png" id="2_m6txk"]
+
+[node name="CloudBase" type="Node2D"]
+scale = Vector2(0.5, 0.5)
+script = ExtResource("1_uuaqe")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-1, -81)
+texture = ExtResource("2_m6txk")
+region_enabled = true
+region_rect = Rect2(1661.95, 39.8216, 264.463, 201.653)
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-6, -99)
+texture = ExtResource("2_m6txk")
+region_enabled = true
+region_rect = Rect2(1049.91, 487.599, 520.892, 285.097)
+
+[node name="3" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-2, -151)
+texture = ExtResource("2_m6txk")
+region_enabled = true
+region_rect = Rect2(1035.23, 15.1439, 531.61, 392.277)

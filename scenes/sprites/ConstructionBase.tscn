@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://dfiiqy4flqrqb"]
+
+[ext_resource type="Texture2D" uid="uid://dka3ot6d4ngof" path="res://textures/construction.png" id="1_423kr"]
+
+[node name="ConstructionBase" type="Sprite2D"]
+position = Vector2(-14, -60)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_423kr")
+region_rect = Rect2(173.447, 685.396, 288.43, 270.248)

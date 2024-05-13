@@ -1,10 +1,11 @@
 @tool
+@icon("res://textures/editor/Pony2D.png")
 extends Node2D
 class_name Rock2D
 
 
 const ROCK_BASE: PackedScene = preload("res://scenes/sprites/RockBase.tscn")
-var rock: Node2D = null
+var rock: Node = null
 
 
 @export var rock_type: Globals.RockType = Globals.RockType.ROCK_1:

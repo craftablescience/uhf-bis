@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6qhqyqihmpoe"]
+
+[ext_resource type="Texture2D" uid="uid://dmtpeovudv6fj" path="res://textures/clouds.png" id="1_cto8f"]
+
+[node name="StatueBase" type="Sprite2D"]
+position = Vector2(0, -190)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_cto8f")
+region_enabled = true
+region_rect = Rect2(17.3088, 46.2659, 938.463, 787.555)

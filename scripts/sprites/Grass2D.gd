@@ -1,10 +1,11 @@
 @tool
+@icon("res://textures/editor/Pony2D.png")
 extends Node2D
 class_name Grass2D
 
 
 const GRASS_BASE: PackedScene = preload("res://scenes/sprites/GrassBase.tscn")
-var grass: Node2D = null
+var grass: Node = null
 
 
 @export var grass_type: Globals.GrassType = Globals.GrassType.GRASS_1:

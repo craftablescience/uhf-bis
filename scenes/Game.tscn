@@ -1,7 +1,14 @@
-[gd_scene load_steps=3 format=3 uid="uid://bchsv8o664ai0"]
+[gd_scene load_steps=10 format=3 uid="uid://bchsv8o664ai0"]
 
 [ext_resource type="Script" path="res://scripts/Game.gd" id="1_64xwx"]
 [ext_resource type="Script" path="res://scripts/ponies/Pony2D.gd" id="1_rvff5"]
+[ext_resource type="Script" path="res://scripts/sprites/Sun2D.gd" id="2_cxiyb"]
+[ext_resource type="Script" path="res://scripts/sprites/PonyPath2D.gd" id="2_ivd06"]
+[ext_resource type="Script" path="res://scripts/sprites/Cloud2D.gd" id="3_2xcv4"]
+[ext_resource type="Script" path="res://scripts/sprites/Hills2D.gd" id="3_dc2ag"]
+[ext_resource type="Script" path="res://scripts/sprites/Mountain2D.gd" id="3_ikwqn"]
+[ext_resource type="Script" path="res://scripts/sprites/Construction2D.gd" id="6_08vcp"]
+[ext_resource type="Script" path="res://scripts/helpers/Boundary2D.gd" id="7_vnf8b"]
 
 [node name="Game" type="Control"]
 process_mode = 1
@@ -13,9 +20,124 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_64xwx")
 
+[node name="BackgroundColor" type="CanvasLayer" parent="."]
+layer = -128
+
+[node name="BackgroundColorRect" type="ColorRect" parent="BackgroundColor"]
+anchors_preset = -1
+anchor_top = 0.7
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1962.0
+grow_horizontal = 2
+grow_vertical = 2
+
 [node name="Background" type="ParallaxBackground" parent="."]
 
-[node name="Closest" type="ParallaxLayer" parent="Background"]
+[node name="Sun" type="ParallaxLayer" parent="Background"]
+motion_scale = Vector2(0.05, 0.05)
+
+[node name="Sun2D" type="Node2D" parent="Background/Sun"]
+position = Vector2(356, 99)
+script = ExtResource("2_cxiyb")
+
+[node name="Clouds" type="ParallaxLayer" parent="Background"]
+motion_scale = Vector2(0.075, 0.075)
+
+[node name="Cloud2D" type="Node2D" parent="Background/Clouds"]
+position = Vector2(461, 187)
+script = ExtResource("3_2xcv4")
+
+[node name="Clouds2" type="ParallaxLayer" parent="Background"]
+motion_scale = Vector2(0.2, 0.2)
+
+[node name="Cloud2D" type="Node2D" parent="Background/Clouds2"]
+position = Vector2(612, 137)
+script = ExtResource("3_2xcv4")
+cloud_type = 1
+
+[node name="Clouds3" type="ParallaxLayer" parent="Background"]
+motion_scale = Vector2(0.15, 0.15)
+
+[node name="Cloud2D" type="Node2D" parent="Background/Clouds3"]
+position = Vector2(1024, 185)
+script = ExtResource("3_2xcv4")
+cloud_type = 2
+
+[node name="Mountains" type="ParallaxLayer" parent="Background"]
+modulate = Color(0.847059, 0.847059, 0.847059, 1)
+motion_scale = Vector2(0.1, 0.1)
+
+[node name="Mountain2D" type="Node2D" parent="Background/Mountains"]
+position = Vector2(556, 336)
+script = ExtResource("3_ikwqn")
+
+[node name="Mountain2D3" type="Node2D" parent="Background/Mountains"]
+position = Vector2(658, 336)
+scale = Vector2(-1, 1)
+script = ExtResource("3_ikwqn")
+
+[node name="Mountain2D4" type="Node2D" parent="Background/Mountains"]
+position = Vector2(921, 336)
+script = ExtResource("3_ikwqn")
+
+[node name="Mountain2D5" type="Node2D" parent="Background/Mountains"]
+position = Vector2(1164, 336)
+script = ExtResource("3_ikwqn")
+
+[node name="Mountain2D6" type="Node2D" parent="Background/Mountains"]
+position = Vector2(246, 336)
+script = ExtResource("3_ikwqn")
+
+[node name="Mountain2D2" type="Node2D" parent="Background/Mountains"]
+position = Vector2(1388, 336)
+script = ExtResource("3_ikwqn")
+
+[node name="Hills" type="ParallaxLayer" parent="Background"]
+modulate = Color(0.847059, 0.847059, 0.847059, 1)
+motion_scale = Vector2(0.25, 0.25)
+
+[node name="Hills2D" type="Node2D" parent="Background/Hills"]
+position = Vector2(325.5, 330)
+script = ExtResource("3_dc2ag")
+hills_length = 5
+
+[node name="Hills2" type="ParallaxLayer" parent="Background"]
+modulate = Color(0.894118, 0.894118, 0.894118, 1)
+motion_scale = Vector2(0.3, 0.3)
+
+[node name="Hills2D" type="Node2D" parent="Background/Hills2"]
+position = Vector2(6, 395)
+scale = Vector2(1.1, 1)
+script = ExtResource("3_dc2ag")
+hills_length = 5
+
+[node name="Hills3" type="ParallaxLayer" parent="Background"]
+modulate = Color(0.972549, 0.972549, 0.972549, 1)
+motion_scale = Vector2(0.5, 0.5)
+
+[node name="Hills2D" type="Node2D" parent="Background/Hills3"]
+position = Vector2(302, 467.375)
+scale = Vector2(1.25, 1)
+script = ExtResource("3_dc2ag")
+hills_length = 4
+
+[node name="Paths" type="ParallaxLayer" parent="Background"]
+
+[node name="PonyPath2D" type="Node2D" parent="Background/Paths"]
+position = Vector2(342, 575)
+scale = Vector2(1, 0.6)
+script = ExtResource("2_ivd06")
+pony_path_length = 5
+
+[node name="Construction2D" type="Node2D" parent="Background/Paths"]
+position = Vector2(361, 565)
+script = ExtResource("6_08vcp")
+
+[node name="Construction2D2" type="Node2D" parent="Background/Paths"]
+position = Vector2(2740, 564)
+scale = Vector2(-1, 1)
+script = ExtResource("6_08vcp")
 
 [node name="PlayerCamera" type="Camera2D" parent="."]
 position = Vector2(640, 360)
@@ -26,3 +148,13 @@ position = Vector2(0, 120)
 scale = Vector2(-0.5, 0.5)
 script = ExtResource("1_rvff5")
 pony_type = 6
+
+[node name="Bounds" type="Node2D" parent="."]
+position = Vector2(640, 0)
+
+[node name="Left" type="Node2D" parent="Bounds"]
+script = ExtResource("7_vnf8b")
+
+[node name="Right" type="Node2D" parent="Bounds"]
+position = Vector2(1850, 0)
+script = ExtResource("7_vnf8b")

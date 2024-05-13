@@ -1,10 +1,11 @@
 @tool
+@icon("res://textures/editor/Pony2D.png")
 extends Node2D
 class_name Bush2D
 
 
 const BUSH_BASE: PackedScene = preload("res://scenes/sprites/BushBase.tscn")
-var bush: Node2D = null
+var bush: Node = null
 
 
 @export var bush_type: Globals.BushType = Globals.BushType.BUSH_BLANK_1:

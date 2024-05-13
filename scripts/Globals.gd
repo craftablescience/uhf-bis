@@ -12,6 +12,13 @@ enum BushType {
 }
 
 
+enum CloudType {
+	CLOUD_1,
+	CLOUD_2,
+	CLOUD_3,
+}
+
+
 enum FlowerBedType {
 	FLOWER_POT_WINDOW,
 	FLOWER_BED,
@@ -57,6 +64,12 @@ enum PonyEmotion {
 	NORMAL,
 	HAPPY,
 	SAD,
+}
+
+
+enum PonyPathType {
+	PATH_1,
+	PATH_2,
 }
 
 

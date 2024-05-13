@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://blrpy1y12lpxu"]
+
+[ext_resource type="Script" path="res://scripts/sprites/base/PonyPathBase.gd" id="1_hq08x"]
+[ext_resource type="Texture2D" uid="uid://dyyh3pxvuuju5" path="res://textures/background.png" id="2_nuom0"]
+
+[node name="PonyPathBase" type="Node2D"]
+script = ExtResource("1_hq08x")
+
+[node name="1" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("2_nuom0")
+region_enabled = true
+region_rect = Rect2(788.198, 427.733, 683.497, 233.59)
+
+[node name="2" type="Sprite2D" parent="."]
+visible = false
+position = Vector2(-8.10623e-06, 0)
+scale = Vector2(1.01333, 1)
+texture = ExtResource("2_nuom0")
+region_enabled = true
+region_rect = Rect2(781.067, 745.85, 675.828, 233.659)

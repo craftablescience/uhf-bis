@@ -1,10 +1,11 @@
 @tool
+@icon("res://textures/editor/Pony2D.png")
 extends Node2D
 class_name Tree2D
 
 
 const TREE_BASE: PackedScene = preload("res://scenes/sprites/TreeBase.tscn")
-var tree: Node2D = null
+var tree: Node = null
 
 
 @export var tree_type: Globals.TreeType = Globals.TreeType.TREE_1:

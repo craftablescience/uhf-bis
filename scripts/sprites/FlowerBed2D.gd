@@ -1,10 +1,11 @@
 @tool
+@icon("res://textures/editor/Pony2D.png")
 extends Node2D
 class_name FlowerBed2D
 
 
 const FLOWER_BED_BASE: PackedScene = preload("res://scenes/sprites/FlowerBedBase.tscn")
-var flower_bed: Node2D = null
+var flower_bed: Node = null
 
 
 @export var flower_bed_type: Globals.FlowerBedType = Globals.FlowerBedType.FLOWER_POT_WINDOW:
